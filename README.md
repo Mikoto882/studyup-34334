@@ -22,3 +22,49 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## userテーブル
+
+| Column             | Type    | Options     |
+| ------------------ | ------- | ----------- |
+| email              | string  | null: false |
+| encrypted_password | string  | null: false |
+| nickname           | string  | null: false |
+| old                | string  | null: false |
+| grade              | integer | null: false |
+| birthday           | date    | null: false |
+
+### Association
+
+- has_many :studies
+- has_many :comments
+
+## studyテーブル
+
+| Column      | Type      | Option            |
+| ----------- | --------- | ----------------- |
+| title       | string    | null: false       |
+| description | text      | null: false       |
+| time        | date      | null: false       |
+| subject     | integer   | null: false       |
+| day         | date      | null: false       |
+| evaluation  | integer   | null: false       |
+| user        | reference | foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- has_many :comments
+
+## commentテーブル
+
+| Column  | Type      | Option            |
+| ------- | --------- | ----------------- |
+| content | string    | null: false       |
+| user    | reference | foreign_key: true |
+| study   | reference | foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- belongs_to :study
