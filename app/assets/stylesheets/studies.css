@@ -1,0 +1,13 @@
+.header {
+  background-color: skyblue;
+  height: 90px;
+  width: 100vw;
+  padding: 20px 40px;
+}
+
+.main {
+  background-color: whitesmoke;
+  height: calc(100vh - 90px);
+  width: 100vw;
+  padding: 30px 40px 0;
+}
