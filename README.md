@@ -47,7 +47,6 @@ Things you may want to cover:
 | description | text      | null: false       |
 | time        | date      | null: false       |
 | subject     | integer   | null: false       |
-| day         | date      | null: false       |
 | evaluation  | integer   | null: false       |
 | user        | reference | foreign_key: true |
 
