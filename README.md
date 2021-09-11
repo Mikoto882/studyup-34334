@@ -31,7 +31,7 @@ Things you may want to cover:
 | encrypted_password | string  | null: false |
 | nickname           | string  | null: false |
 | old                | string  | null: false |
-| grade              | integer | null: false |
+| grade_id           | integer | null: false |
 | birthday           | date    | null: false |
 
 ### Association

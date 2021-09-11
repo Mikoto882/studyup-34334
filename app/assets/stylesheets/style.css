@@ -1,7 +1,11 @@
-.form-wrap {
-  background-color: #e6f0f0;
+.html {
   height: 100vw;
   width: 100vw;
+}
+
+.form-wrap {
+  background-color: #e6f0f0;
+  padding-bottom: 110px;
 }
 
 .form-all {
@@ -30,7 +34,7 @@
 }
 
 .form-group {
-  padding: 15px 15px 15px 50px;
+  padding: 20px 50px;
 }
 
 .form-text-wrap {
