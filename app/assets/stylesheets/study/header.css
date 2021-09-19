@@ -1,0 +1,40 @@
+.header-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title a {
+  font-size: 40px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header__nickname {
+  font-size: 23px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.log__out {
+  font-size: 16px;
+  padding: 14px;
+  color: black;
+  text-decoration: none;
+}
+
+.new__log {
+  font-size: 16px;
+  border: 1px solid red;
+  padding: 14px;
+  margin-left: 10px;
+  color: red;
+  text-decoration: none;
+}

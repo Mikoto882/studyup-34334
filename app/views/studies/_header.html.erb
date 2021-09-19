@@ -1,0 +1,22 @@
+<div class="header-all">
+  <div class="header-title">
+    <a href="#">Study-Up</a>
+  </div>
+
+  <% if user_signed_in? %>
+    <div class="header-nickname">
+      <%= link_to "#{current_user.nickname}さんの記録", "#", class: :header__nickname %>
+  <% end %>
+
+  <% if user_signed_in? %>
+    <div class="link-btn">
+      <%= link_to "ログアウト", destroy_user_session_path, class: :log__out, method: :delete %>
+      <%= link_to "新しい記録", "#", class: :new__log %>
+    </div>
+  <% else %>
+    <div class="link-btn">
+      <%= link_to "ログイン", new_user_session_path, class: :log__out %>
+      <%= link_to "新規登録", new_user_registration_path, class: :new__log %>
+    </div>
+  <% end %>
+</div>
